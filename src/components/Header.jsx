@@ -98,7 +98,7 @@ export default function Header() {
             Newsletter
           </Link>
           <Link to="/meeting" data-cursor="Book" className="ui-label" style={{ color: location.pathname === '/meeting' ? 'var(--text-color)' : 'var(--accent-color)' }}>
-            Book a meeting
+            Book a Meeting
           </Link>
         </nav>
       </header>

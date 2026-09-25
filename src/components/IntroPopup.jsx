@@ -172,7 +172,7 @@ export default function IntroPopup({ isOpen, onClose }) {
                 onMouseEnter={(e) => e.target.style.borderBottomColor = 'var(--text-color)'}
                 onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}
               >
-                Book a meeting
+                Book a Meeting
               </Link>
             </div>
           </div>

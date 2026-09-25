@@ -21,7 +21,7 @@ export const projects = [
 
 export const userProfile = {
   name: "Vikas Sharma",
-  role: "Interactive Designer & Developer",
+  role: "Prompt an AI Agent",
   bio: [
     "I specialize in crafting immersive digital experiences that bridge the gap between design and engineering. My work focuses on fluid motion, generative systems, and typographic precision.",
     "Currently operating independently, partnering with forward-thinking brands and studios to build websites that feel alive."
