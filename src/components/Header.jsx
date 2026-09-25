@@ -87,7 +87,7 @@ export default function Header() {
         <nav className="responsive-nav">
           <div style={{ display: "flex", gap: "0.5rem" }}>
             <Link to="/" data-cursor="View" className="ui-label" style={{ color: location.pathname === '/' ? 'var(--text-color)' : 'var(--accent-color)' }}>
-              Featured
+              Home
             </Link>
             <span className="ui-label">/</span>
             <Link to="/full" data-cursor="View" className="ui-label" style={{ color: location.pathname === '/full' ? 'var(--text-color)' : 'var(--accent-color)' }}>
@@ -98,7 +98,7 @@ export default function Header() {
             Newsletter
           </Link>
           <Link to="/meeting" data-cursor="Book" className="ui-label" style={{ color: location.pathname === '/meeting' ? 'var(--text-color)' : 'var(--accent-color)' }}>
-            Meeting
+            Book a meeting
           </Link>
         </nav>
       </header>

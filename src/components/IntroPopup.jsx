@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { userProfile } from '../data';
+import { Link } from 'react-router-dom';
 
 export default function IntroPopup({ isOpen, onClose }) {
   const overlayRef = useRef(null);
@@ -163,6 +164,16 @@ export default function IntroPopup({ isOpen, onClose }) {
                   {social.name}
                 </a>
               ))}
+              <Link 
+                to="/meeting" 
+                onClick={onClose}
+                data-cursor="Book"
+                style={{ color: 'var(--text-color)', textDecoration: 'none', borderBottom: '1px solid transparent', transition: 'border-color 0.2s' }}
+                onMouseEnter={(e) => e.target.style.borderBottomColor = 'var(--text-color)'}
+                onMouseLeave={(e) => e.target.style.borderBottomColor = 'transparent'}
+              >
+                Book a meeting
+              </Link>
             </div>
           </div>
         </div>

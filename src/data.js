@@ -39,7 +39,6 @@ export const userProfile = {
   email: "vikas.sharma270907@gmail.com",
   socials: [
     { name: "GitHub", url: "https://github.com/vikassharma270907-alt" },
-    { name: "Twitter", url: "#" },
-    { name: "LinkedIn", url: "#" }
+    { name: "X", url: "https://x.com/VikasSharm90791" }
   ]
 };
