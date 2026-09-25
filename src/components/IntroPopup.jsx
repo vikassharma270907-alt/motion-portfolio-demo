@@ -105,7 +105,7 @@ export default function IntroPopup({ isOpen, onClose }) {
               flexShrink: 0
             }}>
               <img 
-                src="/profile.jpg" 
+                src="https://lh3.googleusercontent.com/a/ACg8ocISzRL-8tfALYtn0xu5juCeQ51THmjgIPk4i6Z3U2bTN_G_ZYw=s360-c-no" 
                 alt={userProfile.name}
                 style={{
                   width: '100%',
