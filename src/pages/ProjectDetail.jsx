@@ -97,9 +97,35 @@ export default function ProjectDetail() {
         <p className="body-text" style={{ fontSize: "1.5rem", lineHeight: "1.5", marginBottom: "2rem" }}>
           {project.description}
         </p>
-        <p className="body-text" style={{ color: "var(--accent-color)" }}>
+        <p className="body-text" style={{ color: "var(--accent-color)", marginBottom: "3rem" }}>
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
+
+        {project.demoUrl && (
+          <a 
+            href={project.demoUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            data-cursor="Launch"
+            style={{
+              display: "inline-block",
+              background: "var(--text-color)",
+              color: "var(--bg-color)",
+              padding: "1.25rem 2.5rem",
+              borderRadius: "4px",
+              fontFamily: "var(--ui-font)",
+              textTransform: "uppercase",
+              letterSpacing: "0.1em",
+              fontWeight: 600,
+              textDecoration: "none",
+              transition: "transform 0.2s ease",
+            }}
+            onMouseOver={(e) => e.currentTarget.style.transform = "scale(0.98)"}
+            onMouseOut={(e) => e.currentTarget.style.transform = "scale(1)"}
+          >
+            Visit Live Project ↗
+          </a>
+        )}
       </section>
     </article>
   );
