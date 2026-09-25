@@ -10,15 +10,6 @@ export const projects = [
   },
   {
     id: "02",
-    slug: "solar-system",
-    title: "Solar System",
-    category: "3D Visualisation",
-    description: "solar system 3d",
-    image: "https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?q=80&w=2564&auto=format&fit=crop",
-    demoUrl: "https://solar-system-vikassharma270907-alt.vercel.app"
-  },
-  {
-    id: "03",
     slug: "solar-system-3d-visualisation",
     title: "Solar System 3D Visualisation",
     category: "Interactive WebGL",
