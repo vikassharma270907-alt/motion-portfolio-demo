@@ -24,7 +24,7 @@ export default function FullIndex() {
   };
 
   return (
-    <div style={{ padding: "10rem 2rem 2rem", maxWidth: "1300px", margin: "0 auto", minHeight: "100vh" }}>
+    <div className="page-container" style={{ minHeight: "100vh" }}>
       <h1 className="ui-label" style={{ marginBottom: "4rem" }}>Full Archive</h1>
       
       <div ref={containerRef} style={{ display: "flex", flexDirection: "column" }}>
@@ -33,21 +33,16 @@ export default function FullIndex() {
             key={project.id}
             onClick={(e) => handleProjectClick(project.slug, e)}
             data-cursor="View"
+            className="archive-grid"
             style={{
-              display: "grid",
-              gridTemplateColumns: "4rem 2fr 1fr",
-              padding: "1.5rem 0",
-              borderBottom: "1px solid rgba(255,255,255,0.05)",
               color: "var(--accent-color)",
-              cursor: "pointer",
-              transition: "color 0.3s ease"
             }}
             onMouseOver={(e) => { e.currentTarget.style.color = "var(--text-color)"; }}
             onMouseOut={(e) => { e.currentTarget.style.color = "var(--accent-color)"; }}
           >
-            <span className="ui-label" style={{ color: "inherit" }}>{project.id}</span>
+            <span className="ui-label archive-grid-id" style={{ color: "inherit" }}>{project.id}</span>
             <span className="body-text" style={{ color: "inherit" }}>{project.title}</span>
-            <span className="ui-label" style={{ color: "inherit", textAlign: "right" }}>{project.category}</span>
+            <span className="ui-label" style={{ color: "inherit", textAlign: "left" }}>{project.category}</span>
           </div>
         ))}
       </div>

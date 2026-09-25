@@ -49,16 +49,13 @@ export default function Header() {
     <>
       <header
         ref={headerRef}
+        className="responsive-header"
         style={{
           position: "fixed",
           top: 0,
           left: 0,
           width: "100%",
           zIndex: 90,
-          padding: "2rem",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "flex-start",
           transition: "background-color 0.3s, backdrop-filter 0.3s",
           backgroundColor: isScrolled ? "rgba(10, 10, 10, 0.6)" : "transparent",
           backdropFilter: isScrolled ? "blur(10px)" : "none",
@@ -87,7 +84,7 @@ export default function Header() {
           <span className="ui-label">Profile</span>
         </div>
 
-        <nav style={{ display: "flex", gap: "2rem" }}>
+        <nav className="responsive-nav">
           <div style={{ display: "flex", gap: "0.5rem" }}>
             <Link to="/" data-cursor="View" className="ui-label" style={{ color: location.pathname === '/' ? 'var(--text-color)' : 'var(--accent-color)' }}>
               Featured

@@ -10,7 +10,7 @@ export default function Meeting() {
   }, []);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "100vh", padding: "8rem 2rem 2rem" }}>
+    <div className="page-container" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "100vh" }}>
       <div ref={containerRef} style={{ width: "100%", maxWidth: "1000px" }}>
         <div style={{ textAlign: "center", marginBottom: "2rem" }}>
           <h1 className="display-text" style={{ fontSize: "clamp(2rem, 5vw, 4rem)", marginBottom: "1rem" }}>Let's talk</h1>

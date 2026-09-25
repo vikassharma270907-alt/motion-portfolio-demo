@@ -48,7 +48,7 @@ export default function ProjectDetail() {
   }
 
   return (
-    <article style={{ padding: "8rem 2rem 2rem", maxWidth: "1300px", margin: "0 auto" }}>
+    <article className="page-container">
       <header style={{ marginBottom: "4rem" }}>
         <Link 
           to="/" 

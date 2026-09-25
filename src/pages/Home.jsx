@@ -101,7 +101,7 @@ export default function Home() {
   };
 
   return (
-    <div style={{ padding: "8rem 2rem 2rem", maxWidth: "1300px", margin: "0 auto" }}>
+    <div className="page-container">
       {/* Hero Section */}
       <section style={{ minHeight: "80vh", display: "flex", flexDirection: "column", justifyContent: "center", marginBottom: "8rem" }}>
         <h1 
@@ -136,19 +136,14 @@ export default function Home() {
               onMouseLeave={handleProjectLeave}
               onClick={(e) => handleProjectClick(project.slug, e)}
               data-cursor="View Case"
+              className="project-row"
               style={{
                 display: "flex",
                 alignItems: "center",
-                padding: "3rem 0",
-                borderBottom: "1px solid rgba(255,255,255,0.05)",
-                cursor: "pointer",
-                transition: "padding-left 0.4s cubic-bezier(0.16, 1, 0.3, 1), color 0.4s ease"
               }}
-              onMouseOver={(e) => { e.currentTarget.style.paddingLeft = "2rem"; e.currentTarget.style.color = "var(--text-color)"; }}
-              onMouseOut={(e) => { e.currentTarget.style.paddingLeft = "0"; e.currentTarget.style.color = "var(--accent-color)"; }}
             >
               <span className="ui-label" style={{ width: "4rem", color: "inherit" }}>{project.id}</span>
-              <h3 className="display-text" style={{ fontSize: "clamp(2rem, 5vw, 4rem)", flex: 1, margin: 0, color: "inherit" }}>
+              <h3 className="display-text project-title" style={{ flex: 1, margin: 0, color: "inherit" }}>
                 {project.title}
               </h3>
               <span className="ui-label hide-mobile" style={{ marginLeft: "auto", color: "inherit" }}>

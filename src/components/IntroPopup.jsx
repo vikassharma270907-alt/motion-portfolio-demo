@@ -62,6 +62,7 @@ export default function IntroPopup({ isOpen, onClose }) {
       <div 
         ref={containerRef}
         onClick={(e) => e.stopPropagation()}
+        className="intro-popup-container"
         style={{
           backgroundColor: 'var(--bg-color)',
           width: '100%',
@@ -69,7 +70,6 @@ export default function IntroPopup({ isOpen, onClose }) {
           maxHeight: '90vh',
           borderTopLeftRadius: '24px',
           borderTopRightRadius: '24px',
-          padding: '3rem',
           overflowY: 'auto',
           position: 'relative',
           boxShadow: '0 -10px 40px rgba(0,0,0,0.2)'
@@ -95,7 +95,7 @@ export default function IntroPopup({ isOpen, onClose }) {
         </button>
 
         <div ref={contentRef} style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+          <div className="intro-popup-header">
             <div style={{
               width: '120px',
               height: '120px',
